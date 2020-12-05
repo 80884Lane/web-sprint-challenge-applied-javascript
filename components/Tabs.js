@@ -13,11 +13,11 @@
 axios
     .get('https://lambda-times-api.herokuapp.com/topics')
     .then((res) => {
-        console.log(res.div.topics);
-        const tabs = res.div.topics;
+        console.log(res.data.topics);
+        const tabs = res.data.topics;
         console.log(tabs);
         tabs.forEach((tab) => {
-            const newTab = header(tab);
+            const newTab = head(tab);
             entryPoint.append(newTab);
         });
     })

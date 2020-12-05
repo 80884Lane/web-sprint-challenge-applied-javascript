@@ -12,16 +12,16 @@
 // and append it to the DOM inside the div.header-container
 
 function Header() {
-    const header = document.createElement("div");
+    const head = document.createElement("div");
     const date = document.createElement("span");
     const title = document.createElement("h1");
     const temp = document.createElement("span");
 
-    header.appendChild(date);
-    header.appendChild(title);
-    header.appendChild(temp);
+    head.appendChild(date);
+    head.appendChild(title);
+    head.appendChild(temp);
 
-    header.classList.add("header");
+    head.classList.add("header");
     date.classList.add("date");
     title.classList.add("title");
     temp.classList.add("temp");
@@ -30,7 +30,7 @@ function Header() {
     title.textContent = title;
     temp.textContent = temp;
 
-    return header;
+    return head;
 }
 
 
